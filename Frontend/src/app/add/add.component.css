@@ -1,0 +1,29 @@
+/* Button Hover Effect */
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-secondary {
+  background-color: #444444;
+  border-color: #444444;
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background-color: #555555;
+  border-color: #555555;
+}
+
+
+.form-control:focus {
+  background-color: #444444;
+  border-color: #0d6efd;
+  color: #ffffff;
+}

@@ -1,0 +1,16 @@
+<div class="container mt-4">
+  <h2 class="mb-3 text-white">Film List</h2>
+  <div class="row">
+    <div *ngFor="let film of donne.data" class="col-md-4 mb-4">
+      <div class="card h-100 bg-dark text-white border-secondary">
+        <div class="card-body">
+          <h5 class="card-title">{{film.title}}</h5>
+          <p class="card-text"><strong>Genre:</strong> {{film.genre}}</p>
+          <p class="card-text"><strong>director:</strong> {{film.director}}</p>
+          <p class="card-text"><strong>Rating:</strong> {{film.rating}} / 10</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<h1 *ngIf="donne.data==0">Nessun film disponibile.</h1>

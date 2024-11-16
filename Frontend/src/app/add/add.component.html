@@ -1,0 +1,76 @@
+<div class="container mt-4">
+  <h2 class="mb-3 text-white">Film</h2>
+  <form #f="ngForm" (submit)="ADD(f)">
+    <div class="form-group mb-3">
+      <label for="title" class="text-light">Title</label>
+      <input
+        type="text"
+        id="title"
+        class="form-control bg-dark text-light border-secondary"
+        name="title"
+        required
+        [ngModel]=""
+      />
+    </div>
+    <div class="form-group mb-3">
+      <label for="genre" class="text-light">Genre</label>
+      <input
+        type="text"
+        id="genre"
+        class="form-control bg-dark text-light border-secondary"
+        name="genre"
+        required
+        [ngModel]=""
+      />
+    </div>
+    <div class="form-group mb-3">
+      <label for="releaseDate" class="text-light">Release Date</label>
+      <input
+        type="date"
+        id="releaseDate"
+        class="form-control bg-dark text-light border-secondary"
+        name="releaseDate"
+        required
+        [ngModel]=""
+      />
+    </div>
+    <div class="form-group mb-3">
+      <label for="director" class="text-light">Director</label>
+      <input
+        type="text"
+        id="director"
+        class="form-control bg-dark text-light border-secondary"
+        name="director"
+        required
+        [ngModel]=""
+      />
+    </div>
+    <div class="form-group mb-3">
+      <label for="rating" class="text-light">Rating</label>
+      <input
+        type="number"
+        id="rating"
+        class="form-control bg-dark text-light border-secondary"
+        name="rating"
+        min="0"
+        max="10"
+        required
+        [ngModel]=""
+      />
+    </div>
+    <div class="form-group mb-3">
+      <label for="description" class="text-light">Description</label>
+      <textarea
+        id="description"
+        class="form-control bg-dark text-light border-secondary"
+        name="description"
+        rows="3"
+        [ngModel]=""
+        required
+      ></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Film</button>
+    <button type="reset" class="btn btn-secondary ms-2">Cancel</button>
+  </form>
+</div>
